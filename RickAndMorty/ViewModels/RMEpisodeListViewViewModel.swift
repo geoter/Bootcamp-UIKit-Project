@@ -65,6 +65,7 @@ final class RMEpisodeListViewViewModel: NSObject {
                 self?.episodes = results
                 self?.apiInfo = info
                 DispatchQueue.main.async {
+                    self?.applySnapshot()
                     self?.delegate?.didLoadInitialEpisodes()
                 }
             case .failure(let error):
