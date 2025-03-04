@@ -12,8 +12,6 @@ protocol RMLocationViewDelegate: AnyObject {
     func rmLocationView(_ locationView: RMLocationView, didSelect location: RMLocation)
 }
 
-//TODO: make Diffable
-
 final class RMLocationView: UIView {
 
     public weak var delegate: RMLocationViewDelegate?

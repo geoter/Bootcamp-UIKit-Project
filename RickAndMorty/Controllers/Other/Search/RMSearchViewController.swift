@@ -107,7 +107,6 @@ extension RMSearchViewController: RMSearchViewDelegate {
                 self?.viewModel.set(value: selection, for: option)
             }
         }
-        //TODO: research
         vc.sheetPresentationController?.detents = [.medium()]
         vc.sheetPresentationController?.prefersGrabberVisible = true
         present(vc, animated: true)
